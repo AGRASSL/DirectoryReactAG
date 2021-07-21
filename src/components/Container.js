@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Search from "./search";
+import Search from "./Search";
 import Table from "./Table";
 
-class Table extends Component {
+class Container extends Component {
     state = {
         employeeData: [],
         displayRows: [],
@@ -11,7 +11,7 @@ class Table extends Component {
     };
 
     initialize() {
-        Api.getEmployees(40)
+        API.getEmployees(40)
             .then(res => {
                 let data = res.data.results.map((emp, i) => {
                     return {

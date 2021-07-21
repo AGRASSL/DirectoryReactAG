@@ -1,7 +1,7 @@
 
 import React from "react";
-import Header from "./header";
-import Body from "./body";
+import Header from "./Header";
+import Body from "./Body";
 
 function Table(props) {
     // Store key names of first row of data, to be used as column headers for table

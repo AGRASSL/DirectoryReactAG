@@ -1,5 +1,5 @@
 import React from "react";
-import Row from "./table-row";
+import Row from "./Row";
 
 function Table(props) {
     return (
