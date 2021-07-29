@@ -1,19 +1,13 @@
-import React from "react";
+import React, { Component } from 'react';
+import "../styles/Header.css";
 
-function Head(props) {
+export default class Header extends Component {
+  render() {
     return (
-        <head>
-            <tr>
-                {
-                    props.fields.map(field => {
-                        return (
-                            <th>{field}</th>
-                        )
-                    })
-                }
-            </tr>
-        </head>
+      <div className="header">
+        <h1>Employee Directory</h1>
+        <p>Click on carrots to filter by heading or use the search box to narrow your results.</p>
+      </div>
     )
+  }
 }
-
-export default Head;

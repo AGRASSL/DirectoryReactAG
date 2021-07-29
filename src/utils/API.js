@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export default {
-    getEmployees: count => {
-        return axios.get(`https://randomuser.me/api/?results=${count}&inc=name,email&nat=us`);
-    }
-}
+  // Gets all users
+  getUsers: function() {
+    return axios.get("https://randomuser.me/api/?results=200&nat=us");
+  }
+};
